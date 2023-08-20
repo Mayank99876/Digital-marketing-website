@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: linear-gradient(300deg,blue,purple);
+} */
+
+.header{
+    width: 100%;
+    background: rgb(145, 67, 248);
+    position: fixed;
+}
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    background: whitesmoke;
+  }
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-text{
+    font-size: 30px;
+    margin: 8px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.menu li a:hover{
+  font-weight: bold;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+}
+
+.social-icon i{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.fa-facebook:hover{
+    color: rgb(34, 34, 245);
+}
+
+.fa-instagram:hover{
+    color:rgb(244, 9, 201);
+}
+
+.fa-linkedin:hover{
+    color: blue;
+}
+.open-menu{
+    display: none;
+    font-size: 2rem;
+    margin: 20px;
+    cursor: pointer;  
+}
+
+.close-menu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+}
+
+.hero-left-container{
+    font-weight: bold;
+}
+
+h1{
+    color: purple;
+    animation: hero-text 10s ease infinite;
+}
+
+@keyframes hero-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.back-to-top{
+    width: 100%;
+    margin: 40px;
+}
+
+.card-body{
+    background-color: rgb(145, 67, 248);
+}
+
+.contact-us{
+    background-color: rgb(145, 67, 248);
+    color: white;
+    border: 20px solid blueviolet;
+    border-style: ridge;
+    border-radius: 50px;
+    height: 550px;
+    width: 550px;
+    padding: 30px;
+    margin-top: 150px;
+    margin-left: 550px;
+    position: fixed;
+}
+
+.contact-us button a{
+    text-decoration: none;
+}
+
+@media (max-width:600px){
+    nav .menu{
+        height: 500px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        background-color: whitesmoke;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .menu .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .open-menu{
+        display: block;
+    }
+
+    nav .menu li a:hover{
+      font-size: 1.6rem;
+      background: none;
+    }
+
+    .social-icon i{
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
